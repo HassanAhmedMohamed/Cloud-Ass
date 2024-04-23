@@ -16,3 +16,8 @@ RUN python -c "import nltk; nltk.download('stopwords')"
 
 # Run the Python script
 CMD [ "python", "word_frequency.py" ]
+
+# Building the Docker Image
+docker build -t word-frequency
+# Running the Docker Container
+docker run word-frequency
